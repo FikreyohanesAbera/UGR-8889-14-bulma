@@ -5,72 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Adventures</title>
     <script src="https://kit.fontawesome.com/b47041fb88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-<body>
+<body class="has-background-success">
     <header>
-        <nav> 
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="Adventures.html">Adventures</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Hobbies.html">Hobbies</a></li>
-                <li><a href="contacts.html">Contact</a></li>
+        <nav class="navbar is-info">
+            <div class="navbar-brand pt-2  pl-4 is-size-4">
+                <h2>Porfolio</h2>
+            </div>
+            <a class="navbar-burger" id="hamburger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            <div class="navbar-menu" id="links">
+                <div class="navbar-end is-black">
+                    <a class="navbar-item" href="home.html">Home</a>
+                    <a class="navbar-item" href="Adventures.html">Adventures</a>
+                    <a class="navbar-item" href="skills.html">Skills</a>
+                    <a class="navbar-item" href="About.html">About</a>
+                    <a class="navbar-item" href="Hobbies.html">Hobbies</a>
+                    <a class="navbar-item" href="contacts.html">Contact</a>
 
-            </ul>
+                </div>
+
+
+            </div>
         </nav>
     </header>
-    <div>
-        
-        <img width="320" src="images/wojciech-then-DijA5f0voGQ-unsplash.jpg" alt="background-img">
 
-        <img width="50" src="images/balloon1.png" alt="balloon-img">
-        <h1>My Adventures</h1>
+    <div class="container has-text-centered has-background-success mt-6">
+      
+        <img class="has-text-centered" width="320" src="images/wojciech-then-DijA5f0voGQ-unsplash.jpg" alt="background-img">
+        <!-- <img width="50" src="images/balloon1.png" alt="balloon-img"> -->
+        <h1 class="title">My Adventures</h1>
+
+    </div>
+
 
     
     </div>
     <section>
-        <main>
-            <h1>Places I visited</h1>
-            <img width="150" src="images/AdobeStock_153134060_Preview.jpeg" alt="">
-            <p>Abay was a really mesmerizing location. I liked sound, the fountain and the natural beauty there</p>
-            <img width="150" src="images/mulugeta-wolde-6SgfEwkA02Y-unsplash.jpg" alt="">
-            <p>Lalibela is just pure wisdom. It's my favorite place i visited and i hope they preserve it for ages</p>
+        <main class="section has-text-centered has-background-info">
+            <h1 class="title is-light">Places I visited</h1>
+            <img width="250" src="images/AdobeStock_153134060_Preview.jpeg" alt="">
+            <p class="mb-4">Abay was a really mesmerizing location. I liked sound, the fountain and the natural beauty there</p>
+            <img width="250" src="images/mulugeta-wolde-6SgfEwkA02Y-unsplash.jpg" alt="">
+            <p class="is-white">Lalibela is just pure wisdom. It's my favorite place i visited and i hope they preserve it for ages</p>
             <div>
                 <details>
-                    <summary>Lalibela</summary>
+                    <summary class="subtitle">Lalibela</summary>
                     <p>Lalibela is a small town in the highlands of northern Ethiopia, a country that's been Christian since 330 A.D., making it the oldest Christian country in the world. It is also home to a truly awe-inspiring mystery: a series of 11 churches like no other, all built without bricks, mortar, lumber or concrete.</p>
                 </details>
             </div>
 
         </main>
 
-        <main>
-            <img width="150" src="images/AdobeStock_384693833_Preview (1).jpeg" alt="">
+        <main class="section has-text-centered has-background-primary">
+            <img width="250" src="images/AdobeStock_384693833_Preview (1).jpeg" alt="">
             <p>I went to axum back when i was a child. Although I don't remember much, i still have some memories in hidar tsion ceremony. It's one of the best insights i've ever experienced</p>
-            <img width="150" src="images/AdobeStock_284840933_Preview.jpeg" alt="">
+            <img width="250" src="images/AdobeStock_284840933_Preview.jpeg" alt="">
             <p>Debre libnos is one of the places i frequently visit and it still feels fresh. It's so unique and special religious monastry. I definitely recommend visiting it</p>
         </main>
-        <div>
-            <img class="scroller" width = "280" src="images/12147-removebg.png" alt="">
+        <div class="container has-text-centered">
+            <img class="scroller" width = "320" src="images/12147-removebg.png" alt="">
         </div>
     </section>
     
 </body>
-<footer>
-    <ul>
-        <li><a href="Adventures.html">Adventures</a></li>
-        <li><a href="contacts.html">Contact</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Hobbies.html">Hobbies</a></li>
+<footer class="footer has-text-centered has-background-dark pb-1">
+
+    <p class="mb-3 has-text-danger">Thank you for visiting my website.check out these links to explore further</p>
+    <ul class="columns is-multiline">
+        <a class="column is-full mt-3 has-text-primary" href="Adventures.html">Adventures</a>
+        <a class= "column is-full mt-3 has-text-primary" href="contacts.html">Contact</a>
+        <a class="column is-full mt-3 has-text-primary" href="About.html">About</a>
+        <a class="column is-full mt-3 has-text-primary" href="Hobbies.html">Hobbies</a>
     </ul>
 
-    <div>
-        <a href="godfathershemsu@gmail.com"><i class="fa-brands fa-google fa-2xl"></i></a>
-        <a href=""><i class="fa-brands fa-telegram fa-2xl"></i></a>
-        <a href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+    <div class="mt-3">
+        <a class="has-text-warning" href="godfathershemsu@gmail.com"><i class="fa-brands fa-google fa-2xl"></i></a>
+        <a class="ml-4 has-text-warning" href="t.me/FikreyohanesAbera"><i class="fa-brands fa-telegram fa-2xl"></i></a>
+        <a class="ml-4 has-text-warning" href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
 
     </div>
-</footer>
+    <p class="has-text-centered mt-6 has-text-light">Copyright 2023</p>
+
+
 </footer>
 </html>
