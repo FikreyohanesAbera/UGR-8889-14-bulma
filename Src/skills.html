@@ -4,51 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/b47041fb88.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
-        <nav> 
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="Adventures.html">Adventures</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Hobbies.html">Hobbies</a></li>
-                <li><a href="contacts.html">Contact</a></li>
+        <nav class="navbar is-info has-text-black has-shadow">
+            <div class="navbar-brand is-size-4">
+                <h2 class="navbar-item has-text-black">Porfolio</h2>
+            </div>
+            <a class="navbar-burger" id="hamburger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            <div class="navbar-menu" id="links">
+                <div class="navbar-end is-black">
+                    <a class="navbar-item" href="home.html">Home</a>
+                    <a class="navbar-item" href="Adventures.html">Adventures</a>
+                    <a class="navbar-item" href="skills.html">Skills</a>
+                    <a class="navbar-item" href="About.html">About</a>
+                    <a class="navbar-item" href="Hobbies.html">Hobbies</a>
+                    <a class="navbar-item" href="contacts.html">Contact</a>
 
-            </ul>
+                </div>
+
+
+            </div>
         </nav>
     </header>
+    <section class="section has-text-centered">
+        <div class="container has-text-centered mb-6">
+            <video src="https://youtube.com/shorts/yqhp-UKqcVY?si=jdYXJrX0GEWbff4S"></video>
+            <p>Tricking makes me happy. it's a unique and new type of sport</p>
+        </div>
 
-    <section>
-        <video src="https://youtube.com/shorts/yqhp-UKqcVY?si=jdYXJrX0GEWbff4S"></video>
-        <p>Tricking makes me happy. it's a unique and new type of sport</p>
-        <img width = "300" src="images/AdobeStock_484263064_Preview.jpeg" alt="">
-        <h1>Cooking</h1>
-        <p>I can cook some habesha foods. Although not perfect I can also bake injera</p>
-        <img width="300" src="images/7044277.jpg" alt="">
+        <div class="container has-text-centered mb-6">
+            <img width = "300" src="images/AdobeStock_484263064_Preview.jpeg" alt="">
+             <h1>Cooking</h1>
+            <p>I can cook some habesha foods. Although not perfect I can also bake injera</p>
+
+        </div>
+
+        <div class="container has-text-centered mb-6">
+            <img width="300" src="images/7044277.jpg" alt="">
         <h1>Tutor</h1>
         <p>I have some experience in helping students in their education. Usually i teach interesting subjects like math and physics</p>
-        <img width="300" src="images/kimberly-farmer-lUaaKCUANVI-unsplash.jpg" alt="">
-        <p>I can understand and write some geez. It's a faboulous languague and one day, i hope i can speak it fluently and preserve this national heritage.</p>
+
+        </div>
+        <div class="container has-text-centered mb-6">
+            <img width="300" src="images/kimberly-farmer-lUaaKCUANVI-unsplash.jpg" alt="">
+            <p>I can understand and write some geez. It's a faboulous languague and one day, i hope i can speak it fluently and preserve this national heritage.</p>
+
+        </div>
+        
+       
     </section>
+    <script>
+
+
+        document.getElementById("hamburger").addEventListener("click", function () {
+            document.getElementById("links").classList.toggle("is-active");
+        });
+    </script>
     
 </body>
+<footer class="footer has-text-centered has-background-dark pb-1">
 
-<footer>
-    <ul>
-        <li><a href="Adventures.html">Adventures</a></li>
-        <li><a href="contacts.html">Contact</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Hobbies.html">Hobbies</a></li>
+    <p class="mb-3 has-text-danger">Thank you for visiting my website.check out these links to explore further</p>
+    <ul class="columns is-multiline">
+        <a class="column is-full mt-3 has-text-primary" href="Adventures.html">Adventures</a>
+        <a class= "column is-full mt-3 has-text-primary" href="contacts.html">Contact</a>
+        <a class="column is-full mt-3 has-text-primary" href="About.html">About</a>
+        <a class="column is-full mt-3 has-text-primary" href="Hobbies.html">Hobbies</a>
     </ul>
 
-    <div class = "social media">
-        <a href="godfathershemsu@gmail.com"><i class="fa-brands fa-google fa-2xl"></i></a>
-        <a href=""><i class="fa-brands fa-telegram fa-2xl"></i></a>
-        <a href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+    <div class="mt-3">
+        <a class="has-text-warning" href="godfathershemsu@gmail.com"><i class="fa-brands fa-google fa-2xl"></i></a>
+        <a class="ml-4 has-text-warning" href="t.me/FikreyohanesAbera"><i class="fa-brands fa-telegram fa-2xl"></i></a>
+        <a class="ml-4 has-text-warning" href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
 
     </div>
+    <p class="has-text-centered mt-6 has-text-light">Copyright 2023</p>
+
 
 </footer>
 </html>
