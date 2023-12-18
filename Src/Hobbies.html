@@ -1,50 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/b47041fb88.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
-    <header>
-        <nav> 
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="Adventures.html">Adventures</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Hobbies.html">Hobbies</a></li>
-                <li><a href="contacts.html">Contact</a></li>
+    <header class="mb-0">
+        <nav class="navbar is-fixed-top is-info has-text-black">
+            <div class="navbar-brand is-size-4">
+                <h2 class="navbar-item has-text-black">Porfolio</h2>
+            </div>
+            <a class="navbar-burger" id="hamburger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            <div class="navbar-menu" id="links">
+                <div class="navbar-end is-black">
+                    <a class="navbar-item" href="home.html">Home</a>
+                    <a class="navbar-item" href="Adventures.html">Adventures</a>
+                    <a class="navbar-item" href="skills.html">Skills</a>
+                    <a class="navbar-item" href="About.html">About</a>
+                    <a class="navbar-item" href="Hobbies.html">Hobbies</a>
+                    <a class="navbar-item" href="contacts.html">Contact</a>
 
-            </ul>
+                </div>
+
+
+            </div>
         </nav>
     </header>
-    <section>
+    <section class="section has-background-success has-text-black mt-0 has-text-centered">
         <img width = "300" src="images/6502423.jpg" alt="code-img">
-        <p>Coding has been integrated to my life. It's really enjoyable thing to do and excel at except those times i spent 5 hours trying to debug some simple snippets</p>
+        <p class="mb-6">Coding has been integrated to my life. It's really enjoyable thing to do and excel at except those times i spent 5 hours trying to debug some simple snippets</p>
         <img width = "300" src="images/close-up-father-boy-playing-chess.jpg" alt="chess-img">
-        <p>Playing chess is one of the things i regret not starting earlier. pattern recognition and calculating 15 moves ahead is a cool skill to have. Maybe we can have a friendly game</p>
-        <a href="">Chess Account</a> <br>
+        <p class="mb-2">Playing chess is one of the things i regret not starting earlier. pattern recognition and calculating 15 moves ahead is a cool skill to have. Maybe we can have a friendly game</p>
+        <button class="button mb-6 is-info"><a class="has-text-white" href="">Chess Account</a></button> <br>
         <img width = "300" src="images/sports-tools.jpg" alt="sport-img">
-        <p>Sports are gifts to us. I can say i spent huge amount of times enjoying sports like Football, Ping pong, volleyball etc.</p>
+        <p class="mb-6">Sports are gifts to us. I can say i spent huge amount of times enjoying sports like Football, Ping pong, volleyball etc.</p>
         <img width = "300" src="images/Kerfin7_NEA_2332.jpg" alt="game-img">
-        <p>I like Playing video games in a controlled manner. Back in the days, i used to spend too much time playing them but not anymore. Regardless i think they are better than movies </p>
+        <p class="mb-6">I like Playing video games in a controlled manner. Back in the days, i used to spend too much time playing them but not anymore. Regardless i think they are better than movies </p>
     </section>
+    <script>
+
+
+        document.getElementById("hamburger").addEventListener("click", function () {
+            document.getElementById("links").classList.toggle("is-active");
+        });
+    </script>
     
 </body>
-<footer>
-    <ul>
-        <li><a href="Adventures.html">Adventures</a></li>
-        <li><a href="contacts.html">Contact</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Hobbies.html">Hobbies</a></li>
+<footer class="footer has-text-centered has-background-dark pb-1">
+
+    <p class="mb-3 has-text-danger">Thank you for visiting my website.check out these links to explore further</p>
+    <ul class="columns is-multiline">
+        <a class="column is-full mt-3 has-text-primary" href="Adventures.html">Adventures</a>
+        <a class="column is-full mt-3 has-text-primary" href="contacts.html">Contact</a>
+        <a class="column is-full mt-3 has-text-primary" href="About.html">About</a>
+        <a class="column is-full mt-3 has-text-primary" href="Hobbies.html">Hobbies</a>
     </ul>
 
-    <div>
-        <a href="godfathershemsu@gmail.com"><i class="fa-brands fa-google fa-2xl"></i></a>
-        <a href=""><i class="fa-brands fa-telegram fa-2xl"></i></a>
-        <a href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+    <div class="mt-3">
+        <a class="has-text-warning" href="godfathershemsu@gmail.com"><i class="fa-brands fa-google fa-2xl"></i></a>
+        <a class="ml-4 has-text-warning" href="t.me/FikreyohanesAbera"><i class="fa-brands fa-telegram fa-2xl"></i></a>
+        <a class="ml-4 has-text-warning" href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
 
     </div>
+    <p class="has-text-centered mt-6 has-text-light">Copyright 2023</p>
+
+
 </footer>
+
 </html>
